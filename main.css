@@ -232,6 +232,7 @@ body {
   transition: background 0.3s;
 }
 
+
 .booking-form button:hover {
   background: #ffd700;
 }
