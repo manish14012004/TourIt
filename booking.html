@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form - TourIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="nav-center">
+            <div class="nav-header">
+                <a href="index.html" class="logo">TourIT</a>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="links-container">
+                <ul class="links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#tours">Tours</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Booking Form</h1>
+        <p>Please fill in the details below to complete your booking.</p>
+    </header>
+
+    <section class="booking-form-section">
+        <form action="#" class="booking-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Destination" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" placeholder="Special Requests" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 TourIT Team. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const linksContainer = document.querySelector('.links-container');
+
+        navToggle.addEventListener('click', () => {
+            linksContainer.classList.toggle('show-links');
+        });
+    </script>
+</body>
+</html>

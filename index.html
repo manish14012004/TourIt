@@ -4,87 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TourIt</title>
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <header id="home">
-      <!-- navbar -->
       <nav id="nav">
         <div class="nav-center">
-          <!-- nav header -->
+          <!-- Nav Header -->
           <div class="nav-header">
-            <img src="./logo.svg" class="logo" alt="logo" />
+            <img src="./logo.svg" class="logo" alt="TourIT Logo" />
             <button class="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
           </div>
-          <!-- links -->
+          <!-- Nav Links -->
           <div class="links-container">
             <ul class="links">
               <li>
-                <a href="#home" class="scroll-link">home</a>
+                <a href="#home" class="scroll-link">Home</a>
               </li>
               <li>
-                <a href="#about" class="scroll-link">about</a>
+                <a href="#about" class="scroll-link">About</a>
               </li>
               <li>
-                <a href="#services" class="scroll-link">services</a>
+                <a href="#services" class="scroll-link">Services</a>
               </li>
               <li>
-                <a href="#tours" class="scroll-link">tours</a>
+                <a href="#tours" class="scroll-link">Tours</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- banner -->
+
+      <!-- Banner -->
       <div class="banner">
         <div class="container">
-          <h1>Tour IT</h1>
+          <h1>Explore the World with Tour IT</h1>
           <p>
-            Life is either a daring adventure or nothing at all.
-            So Expore the World and Don't miss to Checkout Seven Wonders
+            Discover breathtaking destinations and create unforgettable memories. The world is waiting for you!
           </p>
-          <a href="#tours" class="scroll-link btn btn-white">explore tours</a>
+          <a href="#tours" class="scroll-link btn btn-primary">Explore Tours</a>
         </div>
       </div>
     </header>
-    <!-- about -->
-    <section id="about" class="section">
-      <div class="title">
-        <h2>about <span>us</span></h2>
-      </div>
-    </section>
-    <!-- services -->
-    <section id="services" class="section">
-      <div class="title">
-        <h2>our <span>services</span></h2>
-      </div>
-    </section>
-    <!-- contact -->
-    <section id="tours" class="section">
-      <div class="title">
-        <h2>featured <span>tours</span></h2>
-      </div>
-    </section>
-    <!-- footer -->
-    <footer class="section">
-      <p>
-        copyright &copy; Jay,saikiran,akshata,disha
-        <span id="date"></span>. all rights reserved
-      </p>
-    </footer>
-    <a class="scroll-link top-link" href="#home">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-    <!-- javascript -->
-    <script src="app.js"></script>
 
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="title">
+          <h2>About <span>Us</span></h2>
+        </div>
+        <p class="section-text">
+          At TourIT, we believe that travel is more than just sightseeing. It's about creating stories, forging connections, and exploring the unknown. We offer personalized tours that cater to every kind of traveler.
+        </p>
+        <p class="section-text">
+          Our mission is to transform your travel dreams into reality by providing unique and immersive experiences that go beyond the ordinary. We curate itineraries that reflect your interests, whether you're an adventure seeker, a culture enthusiast, or someone looking to relax on pristine beaches.
+        </p>
+        <p class="section-text">
+          Our team of experienced travel experts is passionate about exploring the world and sharing their insights with you. We prioritize sustainable tourism practices to ensure that our adventures are beneficial for both travelers and the destinations we visit.
+        </p>
+        <p class="section-text">
+          Join us as we uncover hidden gems, taste authentic cuisines, and create memories that last a lifetime. Let TourIT be your trusted partner in your journey to explore the world!
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="title">
+          <h2>Our <span>Services</span></h2>
+        </div>
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-plane-departure fa-2x"></i>
+            <h3>Travel Booking</h3>
+            <p>Plan your trips with ease and get the best deals on flights, hotels, and transportation.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-map-marked-alt fa-2x"></i>
+            <h3>Guided Tours</h3>
+            <p>Explore famous landmarks and hidden gems with our expert guides.</p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-umbrella-beach fa-2x"></i>
+            <h3>Vacation Packages</h3>
+            <p>Enjoy pre-packaged holidays designed for relaxation, adventure, or family fun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Tours Section -->
+    <section id="tours" class="section">
+      <div class="container">
+        <div class="title">
+          <h2>Featured <span>Tours</span></h2>
+        </div>
+        <div class="tours">
+          <div class="tour-item">
+            <img src="https://th.bing.com/th?id=OIP.aJZPTkbAjyRvX_P1ohWbnAAAAA&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Paris Tour" />
+            <h3>Paris, France</h3>
+            <p>Explore the City of Light, from the Eiffel Tower to the Louvre Museum.</p>
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+          </div>
+          <div class="tour-item">
+            <img src="https://th.bing.com/th?id=OIP.KDWSRiTZEzhj3Iqr3VbeXwHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="Maldives Tour" />
+            <h3>Maldives</h3>
+            <p>Enjoy a tropical paradise with crystal-clear waters and stunning beaches.</p>
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+          </div>
+          <div class="tour-item">
+            <img src="https://th.bing.com/th/id/OIP.bSnTokC_c4OMgm-bm9OfyQHaE2?w=313&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Japan Tour" />
+            <h3>Tokyo, Japan</h3>
+            <p>Discover the mix of tradition and modernity in Japan’s vibrant capital.</p>
+            <a href="booking.html" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="title">
+          <h2>Contact <span>Us</span></h2>
+        </div>
+        <p>We'd love to hear from you! Reach out for inquiries, support, or special requests.</p>
+        <form action="#" class="contact-form">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section">
+      <div class="container">
+        <p>
+          Copyright &copy; 2024 TourIT Team. All Rights Reserved.
+          <span id="date"></span>
+        </p>
+      </div>
+      <a class="scroll-link top-link" href="#home">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Set current year in the footer
+      const date = document.getElementById("date");
+      date.innerHTML = new Date().getFullYear();
+
+      // Smooth scrolling for internal links
+      document.querySelectorAll('.scroll-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        });
+      });
+
+      // Toggle the navigation menu on mobile
+      const navToggle = document.querySelector(".nav-toggle");
+      const linksContainer = document.querySelector(".links-container");
+      navToggle.addEventListener("click", function () {
+        linksContainer.classList.toggle("show-links");
+      });
+    </script>
   </body>
 </html>
