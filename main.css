@@ -18,13 +18,15 @@ body {
 
 /* Navbar */
 #nav {
-  background: #333;
+  
+  background: transparent;
   color: rgb(19, 3, 3);
   padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 
 .nav-center {
   width: 90%;
@@ -46,7 +48,7 @@ body {
   display: none;
   background: transparent;
   border: none;
-  color: rgb(12, 6, 6);
+  color: white;
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -76,13 +78,20 @@ body {
 }
 
 /* Banner Section */
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./hero-bcg.jpeg) center/cover no-repeat;
+}
 .banner {
   height: 90vh;
-  background: url('banner-image.jpg') no-repeat center center/cover;
-  color: rgb(16, 1, 1);
-  display: flex;
+
+  color: rgb(246, 246, 246);
+  display: grid;
   align-items: center;
   justify-content: center;
+  place-items: center;
+
   text-align: center;
   padding: 0 2rem;
 }
@@ -111,7 +120,7 @@ body {
 }
 
 .btn:hover {
-  background: #ffa500;
+  background: #ffffff;
 }
 
 .btn-primary {
@@ -232,7 +241,6 @@ body {
   transition: background 0.3s;
 }
 
-
 .booking-form button:hover {
   background: #ffd700;
 }
@@ -244,6 +252,7 @@ footer {
   background: #333;
   color: white;
 }
+
 
 /* Scroll to Top */
 .top-link {
@@ -289,5 +298,30 @@ footer {
 
   .links li {
     margin: 1rem 0;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+  }
+
+  .services,
+  .tours {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    padding: 1rem;
   }
 }

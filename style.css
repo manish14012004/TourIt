@@ -26,6 +26,7 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
+    position: sticky;
 }
 
 .nav-center {
@@ -132,4 +133,65 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    
+    .banner {
+        /* Full height to cover the entire viewport */
+        height: 100vh;
+      
+        /* Background image */
+        background-image: url('https://th.bing.com/th?id=OIP.aJZPTkbAjyRvX_P1ohWbnAAAAA&w=306&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2'); /* Replace with the actual image path */
+      
+        /* Cover the entire area */
+        background-size: cover;
+      
+        /* Center the background image */
+        background-position: center;
+      
+        /* Prevent repetition */
+        background-repeat: no-repeat;
+      
+        /* Optional: Add a semi-transparent overlay */
+        position: relative;
+      }
+      
+      .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to darken */
+        z-index: 1;
+      }
+      
+      .banner .container {
+        position: relative;
+        z-index: 2; /* Bring text to the front */
+        color: white;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      .banner h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow to the text */
+      }
+      
+      .banner p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+      
+      .banner a {
+        padding: 10px 20px;
+        background-color: #ff6b6b;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+      }
+      
 }
